@@ -6,7 +6,8 @@ from datetime import datetime
 class LLMModelPricing:
     """ Pricing information model for LLM models. """
 
-    def __init__(self, model, provider, input_tokens_price, output_tokens_price, context, source, updated):
+    def __init__(self, model, provider, input_tokens_price,
+                 output_tokens_price, context, source, updated):
         self.model = model
         self.provider = provider
         self.input_tokens_price = input_tokens_price
