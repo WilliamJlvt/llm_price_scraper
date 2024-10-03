@@ -1,6 +1,7 @@
+from datetime import datetime
+
 import requests
 from bs4 import BeautifulSoup
-from datetime import datetime
 
 
 class LLMModelPricing:
@@ -10,10 +11,10 @@ class LLMModelPricing:
                  output_tokens_price, context, source, updated):
         self.model = model
         self.provider = provider
-        self.input_tokens_price = input_tokens_price # price per 1M tokens in dollars USD
-        self.output_tokens_price = output_tokens_price # price per 1M tokens in dollars USD
-        self.context = context # context for the model
-        self.source = source # source of the pricing information
+        self.input_tokens_price = input_tokens_price  # price per 1M tokens in dollars USD
+        self.output_tokens_price = output_tokens_price  # price per 1M tokens in dollars USD
+        self.context = context  # context for the model
+        self.source = source  # source of the pricing information
         self.updated = updated
 
     def __str__(self):
@@ -24,6 +25,7 @@ class LLMModelPricing:
                f"Context: {self.context}, " \
                f"Source: {self.source}, " \
                f"Updated: {self.updated}"
+
 
 class LlmPricingScraper:
     @staticmethod
@@ -39,7 +41,8 @@ class LlmPricingScraper:
         response = requests.get(url)
 
         if response.status_code != 200:
-            raise Exception(f"Failed to retrieve the webpage. Status code: {response.status_code}")
+            raise Exception(
+                f"Failed to retrieve the webpage. Status code: {response.status_code}")
 
         soup = BeautifulSoup(response.content, "html.parser")
 
@@ -60,7 +63,8 @@ class LlmPricingScraper:
                 input_tokens_price = input_tokens_price[1:]
                 output_tokens_price = cells[4].text.strip()
                 output_tokens_price = output_tokens_price[1:]
-                updated = datetime.strptime(cells[6].text.strip(), "%B %d, %Y").strftime("%B %d, %Y")
+                updated = datetime.strptime(cells[6].text.strip(),
+                                            "%B %d, %Y").strftime("%B %d, %Y")
 
                 # Create an object for each row
                 pricing_info = LLMModelPricing(
