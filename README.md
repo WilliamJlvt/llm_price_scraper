@@ -5,6 +5,7 @@ LLM Pricing SDK is a Python package designed to scrape and organize pricing info
 from the following sources: 
 - https://huggingface.co/spaces/philschmid/llm-pricing
 - https://www.botgenuity.com/tools/llm-pricing
+- https://llm-price.com
 
 ## Installation
 ~~You can install the package using pip:~~ (not yet available)

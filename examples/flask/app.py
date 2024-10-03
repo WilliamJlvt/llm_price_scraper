@@ -14,6 +14,8 @@ def get_pricing():
             results = LlmPricingScraper.scrape(DataSources.BOTGENUITY)
         elif source.lower() == DataSources.HUGGINGFACE.value:
             results = LlmPricingScraper.scrape(DataSources.HUGGINGFACE)
+        elif source.lower() == DataSources.HUHUHANG.value:
+            results = LlmPricingScraper.scrape(DataSources.HUHUHANG)
         else:
             return jsonify(
                 {"error": f"Source '{source}' is not supported."}), 400
