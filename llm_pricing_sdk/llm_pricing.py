@@ -1,7 +1,16 @@
 from datetime import datetime
-
-import requests
+from enum import Enum
 from bs4 import BeautifulSoup
+
+import re
+import requests
+
+from llm_pricing_sdk.utils import fetch_ts_file
+
+
+class DataSources(Enum):
+    BOTGENUITY = "botgenuity"
+    HUGGINGFACE = "huggingface"
 
 
 class LLMModelPricing:
@@ -29,14 +38,7 @@ class LLMModelPricing:
 
 class LlmPricingScraper:
     @staticmethod
-    def scrape():
-        """
-        Scrape the LLM pricing information from the specified webpage.
-
-        Returns:
-            A list of LLMModelPricing objects, where each object contains pricing info like:
-            LLMModelPricing(model, provider, input_tokens_price, output_tokens_price, context, source, updated)
-        """
+    def botgenuity_scrape():
         url = "https://www.botgenuity.com/tools/llm-pricing"
         response = requests.get(url)
 
@@ -80,3 +82,66 @@ class LlmPricingScraper:
                 rows.append(pricing_info)
 
         return rows
+
+    @staticmethod
+    def huggingface_scrape():
+        url = "https://huggingface.co/spaces/philschmid/llm-pricing/resolve/main/src/lib/data.ts"
+
+        provider_regex = re.compile(r"provider: '(.*?)',")  # Nom du provider
+        uri_regex = re.compile(r"uri: '(.*?)',")  # URI (source)
+        models_regex = re.compile(
+            r"\{ name: '(.*?)', inputPrice: ([\d.]+), outputPrice: ([\d.]+) \}")  # Modèles/prix
+
+        providers = []
+
+        content = fetch_ts_file(url)
+
+        # Découper le contenu TS par block de provider
+        provider_blocks = content.split('},\n  {')
+
+        for block in provider_blocks:
+            # Extraire le provider
+            provider_match = provider_regex.search(block)
+            uri_match = uri_regex.search(block)
+
+            if provider_match and uri_match:
+                provider_name = provider_match.group(1)
+                provider_uri = uri_match.group(1)
+
+                # Extraire les modèles (nom, prix d'entrée, prix de sortie)
+                models = models_regex.findall(block)
+
+                for model in models:
+                    model_name, input_price, output_price = model
+                    # Créer une instance de LLMModelPricing pour chaque modèle
+                    pricing_data = LLMModelPricing(
+                        model=model_name,
+                        provider=provider_name,
+                        input_tokens_price=float(input_price),
+                        output_tokens_price=float(output_price),
+                        context="",
+                        source=provider_uri,
+                        updated=str(datetime.now().date())  # Date actuelle
+                    )
+                    providers.append(pricing_data)
+
+        return providers
+
+
+    @staticmethod
+    def scrape(source: DataSources = DataSources.HUGGINGFACE):
+        """
+        Scrape the LLM pricing information from the specified source.
+
+        :arg source: The source to scrape the pricing information from. Default is "botgenuity".
+
+        :returns
+            A list of LLMModelPricing objects, where each object contains pricing info like:
+            LLMModelPricing(model, provider, input_tokens_price, output_tokens_price, context, source, updated)
+        """
+        if source == DataSources.BOTGENUITY:
+            return LlmPricingScraper.botgenuity_scrape()
+        elif source == DataSources.HUGGINGFACE:
+            return LlmPricingScraper.huggingface_scrape()
+        else:
+            raise Exception(f"Source '{source}' is not supported.")
