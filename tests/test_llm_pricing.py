@@ -1,12 +1,14 @@
 import unittest
 import requests_mock
-from llm_pricing_sdk.llm_pricing import LlmPricingScraper
+from llm_pricing_sdk.scrapers import LlmPricingScraper, DataSources
 
 
 class TestLlmPricingScraper(unittest.TestCase):
 
     def test_scrape_returns_at_least_one_result(self):
         pricing_data = LlmPricingScraper.scrape()
+        self.assertTrue(len(pricing_data) > 0)
+        pricing_data = LlmPricingScraper.scrape(DataSources.BOTGENUITY)
         self.assertTrue(len(pricing_data) > 0)
 
     @requests_mock.Mocker()
@@ -15,7 +17,7 @@ class TestLlmPricingScraper(unittest.TestCase):
         mock_request.get('https://www.botgenuity.com/tools/llm-pricing', text="""
         <html><body><table></table></body></html>
         """)
-        results = LlmPricingScraper.scrape()
+        results = LlmPricingScraper.scrape(DataSources.BOTGENUITY)
         self.assertEqual(len(results),
                          0)  # No data in table, expect empty list
 
@@ -26,7 +28,7 @@ class TestLlmPricingScraper(unittest.TestCase):
 
         # Expect the scrape method to raise an exception
         with self.assertRaises(Exception) as context:
-            LlmPricingScraper.scrape()
+            LlmPricingScraper.scrape(DataSources.BOTGENUITY)
 
         self.assertTrue('Failed to retrieve the webpage' in str(context.exception))
 

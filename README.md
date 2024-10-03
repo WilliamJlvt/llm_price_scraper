@@ -1,5 +1,10 @@
+from llm_pricing_sdk.enums import DataSources
+
 # LLM Pricing SDK
-LLM Pricing SDK is a Python package designed to scrape and organize pricing information for large language models (LLMs) from the following webpage: https://www.botgenuity.com/tools/llm-pricing.
+LLM Pricing SDK is a Python package designed to scrape and organize pricing information for large language models (LLMs)
+from the following sources: 
+- https://huggingface.co/spaces/philschmid/llm-pricing
+- https://www.botgenuity.com/tools/llm-pricing
 
 ## Installation
 ~~You can install the package using pip:~~ (not yet available)
@@ -17,7 +22,7 @@ pip install .
 ## Usage
 Once you have installed the SDK, you can use it to quickly retrieve the current pricing information from the website.
 ```python
-from llm_pricing_sdk.llm_pricing import LlmPricingScraper
+from llm_pricing_sdk.scrapers import LlmPricingScraper
 
 # Get the pricing information
 pricing_data = LlmPricingScraper.scrape()
@@ -45,6 +50,12 @@ for entry in gpt_4o_models:
     print(f"Source: {entry.source}")
     print(f"Updated: {entry.updated}")
     print("-" * 40)
+```
+You can also chose the source of the data you want to scrape by passing the source as an argument to the `scrape` method. The available sources are defined in the `DataSources` enum.
+```python
+from llm_pricing_sdk.scrapers import LlmPricingScraper, DataSources
+
+pricing_data = LlmPricingScraper.scrape(DataSources.BOTGENUITY)
 ```
 
 ### Example Output
