@@ -28,7 +28,7 @@ class BotgenuityScraper:
                 context = cells[2].text.strip()
                 input_tokens_price = cells[3].text.strip().replace("$", "")
                 output_tokens_price = cells[4].text.strip().replace("$", "")
-                updated = datetime.strptime(cells[6].text.strip(), "%B %d, %Y").strftime("%B %d, %Y")
+                updated = datetime.strptime(cells[6].text.strip(), "%B %d, %Y").strftime("%Y-%m-%d")
 
                 pricing_info = LLMModelPricing(
                     provider=provider,
