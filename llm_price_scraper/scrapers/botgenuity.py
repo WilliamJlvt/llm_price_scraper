@@ -34,8 +34,8 @@ class BotgenuityScraper:
                     provider=provider,
                     model=model,
                     context=context,
-                    input_tokens_price=input_tokens_price,
-                    output_tokens_price=output_tokens_price,
+                    input_tokens_price=float(input_tokens_price) if input_tokens_price else 0.0,
+                    output_tokens_price=float(output_tokens_price) if output_tokens_price else 0.0,
                     source=url,
                     updated=updated
                 )

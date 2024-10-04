@@ -1,3 +1,4 @@
+import datetime
 import json
 from llm_price_scraper.enums import DataSources
 from llm_price_scraper.scrapers import LlmPricingScraper
@@ -57,4 +58,5 @@ if __name__ == "__main__":
 
     combined_models = combine_models(sources_to_scrape)
 
-    save_to_json(combined_models, "combined_llm_pricing_models.json")
+    now = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    save_to_json(combined_models, f"combined_llm_pricing_models({now}).json")

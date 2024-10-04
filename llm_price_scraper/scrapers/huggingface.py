@@ -33,8 +33,8 @@ class HuggingfaceScraper:
                     pricing_data = LLMModelPricing(
                         model=model_name,
                         provider=provider_name,
-                        input_tokens_price=float(input_price),
-                        output_tokens_price=float(output_price),
+                        input_tokens_price=float(input_price) if input_price else 0.0,
+                        output_tokens_price=float(output_price) if output_price else 0.0,
                         context="",
                         source=provider_uri,
                         updated=str(datetime.now().date())

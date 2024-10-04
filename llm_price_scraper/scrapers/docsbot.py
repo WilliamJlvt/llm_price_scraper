@@ -33,6 +33,9 @@ class DocsBotScraper:
                 if model_name_div:
                     # Use the <div> inside the <td> to get the accurate model name
                     model_name = model_name_div.text.strip()
+                else:
+                    # If no <div> is found, use the text content of the <td>
+                    model_name = model_name
 
                 context = cells[2].text.strip()
                 input_tokens_price = cells[3].text.strip().replace("$", "")

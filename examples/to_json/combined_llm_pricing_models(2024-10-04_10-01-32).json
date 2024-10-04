@@ -2,8 +2,8 @@
     {
         "model": "gpt-4-32k",
         "provider": "OpenAI",
-        "input_tokens_price": "60",
-        "output_tokens_price": "120",
+        "input_tokens_price": 60.0,
+        "output_tokens_price": 120.0,
         "context": "32K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -11,8 +11,8 @@
     {
         "model": "gpt-4",
         "provider": "OpenAI",
-        "input_tokens_price": "30",
-        "output_tokens_price": "60",
+        "input_tokens_price": 30.0,
+        "output_tokens_price": 60.0,
         "context": "8K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -20,8 +20,8 @@
     {
         "model": "gpt-4o",
         "provider": "OpenAI",
-        "input_tokens_price": "5",
-        "output_tokens_price": "15",
+        "input_tokens_price": 5.0,
+        "output_tokens_price": 15.0,
         "context": "128K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-05-16"
@@ -29,8 +29,8 @@
     {
         "model": "gpt-4o-2024-08-06",
         "provider": "OpenAI",
-        "input_tokens_price": "2.5",
-        "output_tokens_price": "10",
+        "input_tokens_price": 2.5,
+        "output_tokens_price": 10.0,
         "context": "128K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-08-16"
@@ -38,8 +38,8 @@
     {
         "model": "gpt-4o-mini",
         "provider": "OpenAI",
-        "input_tokens_price": "0.15",
-        "output_tokens_price": "0.6",
+        "input_tokens_price": 0.15,
+        "output_tokens_price": 0.6,
         "context": "128K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-07-19"
@@ -47,8 +47,8 @@
     {
         "model": "gpt-4-turbo-2024-04-09",
         "provider": "OpenAI",
-        "input_tokens_price": "10",
-        "output_tokens_price": "30",
+        "input_tokens_price": 10.0,
+        "output_tokens_price": 30.0,
         "context": "128K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-04-11"
@@ -56,8 +56,8 @@
     {
         "model": "gpt-4-0125-preview",
         "provider": "OpenAI",
-        "input_tokens_price": "10",
-        "output_tokens_price": "30",
+        "input_tokens_price": 10.0,
+        "output_tokens_price": 30.0,
         "context": "128K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -65,8 +65,8 @@
     {
         "model": "gpt-4-1106-preview",
         "provider": "OpenAI",
-        "input_tokens_price": "10",
-        "output_tokens_price": "30",
+        "input_tokens_price": 10.0,
+        "output_tokens_price": 30.0,
         "context": "128K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -74,8 +74,8 @@
     {
         "model": "gpt-4-vision-preview",
         "provider": "OpenAI",
-        "input_tokens_price": "10",
-        "output_tokens_price": "30",
+        "input_tokens_price": 10.0,
+        "output_tokens_price": 30.0,
         "context": "128K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -83,8 +83,8 @@
     {
         "model": "gpt-3.5-turbo-0125",
         "provider": "OpenAI",
-        "input_tokens_price": "0.5",
-        "output_tokens_price": "1.5",
+        "input_tokens_price": 0.5,
+        "output_tokens_price": 1.5,
         "context": "16K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -92,8 +92,8 @@
     {
         "model": "gpt-3.5-turbo-instruct",
         "provider": "OpenAI",
-        "input_tokens_price": "1.5",
-        "output_tokens_price": "2",
+        "input_tokens_price": 1.5,
+        "output_tokens_price": 2.0,
         "context": "4K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -101,8 +101,8 @@
     {
         "model": "gpt-3.5-turbo-1106",
         "provider": "OpenAI",
-        "input_tokens_price": "1",
-        "output_tokens_price": "2",
+        "input_tokens_price": 1.0,
+        "output_tokens_price": 2.0,
         "context": "4K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -110,8 +110,8 @@
     {
         "model": "gpt-3.5-turbo-0613",
         "provider": "OpenAI",
-        "input_tokens_price": "1.5",
-        "output_tokens_price": "2",
+        "input_tokens_price": 1.5,
+        "output_tokens_price": 2.0,
         "context": "4K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -119,8 +119,8 @@
     {
         "model": "gpt-3.5-turbo-16k-0613",
         "provider": "OpenAI",
-        "input_tokens_price": "3",
-        "output_tokens_price": "4",
+        "input_tokens_price": 3.0,
+        "output_tokens_price": 4.0,
         "context": "4K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -128,8 +128,8 @@
     {
         "model": "gpt-3.5-turbo-0301",
         "provider": "OpenAI",
-        "input_tokens_price": "1.5",
-        "output_tokens_price": "2",
+        "input_tokens_price": 1.5,
+        "output_tokens_price": 2.0,
         "context": "4K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -137,8 +137,8 @@
     {
         "model": "gpt-4-turbo",
         "provider": "Azure",
-        "input_tokens_price": "10",
-        "output_tokens_price": "30",
+        "input_tokens_price": 10.0,
+        "output_tokens_price": 30.0,
         "context": "128K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -146,8 +146,8 @@
     {
         "model": "gpt-4-turbo-vision",
         "provider": "Azure",
-        "input_tokens_price": "10",
-        "output_tokens_price": "30",
+        "input_tokens_price": 10.0,
+        "output_tokens_price": 30.0,
         "context": "128K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -155,8 +155,8 @@
     {
         "model": "claude-3.5-sonnet",
         "provider": "Anthropic",
-        "input_tokens_price": "3",
-        "output_tokens_price": "15",
+        "input_tokens_price": 3.0,
+        "output_tokens_price": 15.0,
         "context": "200K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-06-26"
@@ -164,8 +164,8 @@
     {
         "model": "claude-3-opus",
         "provider": "Anthropic",
-        "input_tokens_price": "15",
-        "output_tokens_price": "75",
+        "input_tokens_price": 15.0,
+        "output_tokens_price": 75.0,
         "context": "200K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -173,8 +173,8 @@
     {
         "model": "claude-3-sonnet",
         "provider": "Anthropic",
-        "input_tokens_price": "3",
-        "output_tokens_price": "15",
+        "input_tokens_price": 3.0,
+        "output_tokens_price": 15.0,
         "context": "200K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -182,8 +182,8 @@
     {
         "model": "claude-3-haiku",
         "provider": "Anthropic",
-        "input_tokens_price": "0.25",
-        "output_tokens_price": "1.25",
+        "input_tokens_price": 0.25,
+        "output_tokens_price": 1.25,
         "context": "200K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -191,8 +191,8 @@
     {
         "model": "claude-2.1",
         "provider": "Anthropic",
-        "input_tokens_price": "8",
-        "output_tokens_price": "24",
+        "input_tokens_price": 8.0,
+        "output_tokens_price": 24.0,
         "context": "200K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -200,8 +200,8 @@
     {
         "model": "claude-2.0",
         "provider": "Anthropic",
-        "input_tokens_price": "8",
-        "output_tokens_price": "24",
+        "input_tokens_price": 8.0,
+        "output_tokens_price": 24.0,
         "context": "100K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -209,8 +209,8 @@
     {
         "model": "claude-instant-1.2",
         "provider": "Anthropic",
-        "input_tokens_price": "0.8",
-        "output_tokens_price": "2.4",
+        "input_tokens_price": 0.8,
+        "output_tokens_price": 2.4,
         "context": "100K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -218,8 +218,8 @@
     {
         "model": "jurassic-2-ultra",
         "provider": "AWS",
-        "input_tokens_price": "18.8",
-        "output_tokens_price": "18.8",
+        "input_tokens_price": 18.8,
+        "output_tokens_price": 18.8,
         "context": "32K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -227,8 +227,8 @@
     {
         "model": "jurassic-2-mid",
         "provider": "AWS",
-        "input_tokens_price": "12.5",
-        "output_tokens_price": "12.5",
+        "input_tokens_price": 12.5,
+        "output_tokens_price": 12.5,
         "context": "32K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -236,8 +236,8 @@
     {
         "model": "titan-text-lite",
         "provider": "AWS",
-        "input_tokens_price": "0.3",
-        "output_tokens_price": "0.4",
+        "input_tokens_price": 0.3,
+        "output_tokens_price": 0.4,
         "context": "32K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -245,8 +245,8 @@
     {
         "model": "titan-text-express",
         "provider": "AWS",
-        "input_tokens_price": "0.8",
-        "output_tokens_price": "1.6",
+        "input_tokens_price": 0.8,
+        "output_tokens_price": 1.6,
         "context": "32K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -254,8 +254,8 @@
     {
         "model": "claude-instant",
         "provider": "AWS",
-        "input_tokens_price": "0.8",
-        "output_tokens_price": "2.4",
+        "input_tokens_price": 0.8,
+        "output_tokens_price": 2.4,
         "context": "32K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -263,8 +263,8 @@
     {
         "model": "claude-2.0/2.1",
         "provider": "AWS",
-        "input_tokens_price": "8",
-        "output_tokens_price": "24",
+        "input_tokens_price": 8.0,
+        "output_tokens_price": 24.0,
         "context": "32K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -272,8 +272,8 @@
     {
         "model": "command",
         "provider": "AWS",
-        "input_tokens_price": "1.5",
-        "output_tokens_price": "2",
+        "input_tokens_price": 1.5,
+        "output_tokens_price": 2.0,
         "context": "32K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -281,8 +281,8 @@
     {
         "model": "command-light",
         "provider": "AWS",
-        "input_tokens_price": "0.3",
-        "output_tokens_price": "0.6",
+        "input_tokens_price": 0.3,
+        "output_tokens_price": 0.6,
         "context": "32K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -290,8 +290,8 @@
     {
         "model": "llama-2-chat-13B",
         "provider": "AWS",
-        "input_tokens_price": "0.75",
-        "output_tokens_price": "1",
+        "input_tokens_price": 0.75,
+        "output_tokens_price": 1.0,
         "context": "32K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -299,8 +299,8 @@
     {
         "model": "llama-2-chat-70B",
         "provider": "AWS",
-        "input_tokens_price": "1.95",
-        "output_tokens_price": "2.56",
+        "input_tokens_price": 1.95,
+        "output_tokens_price": 2.56,
         "context": "32K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -308,8 +308,8 @@
     {
         "model": "mistral-7b",
         "provider": "AWS",
-        "input_tokens_price": "0.15",
-        "output_tokens_price": "0.2",
+        "input_tokens_price": 0.15,
+        "output_tokens_price": 0.2,
         "context": "32K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -317,8 +317,8 @@
     {
         "model": "mistral-8x7b",
         "provider": "AWS",
-        "input_tokens_price": "0.45",
-        "output_tokens_price": "0.7",
+        "input_tokens_price": 0.45,
+        "output_tokens_price": 0.7,
         "context": "32K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -326,8 +326,8 @@
     {
         "model": "gemini-1.0-pro",
         "provider": "Google",
-        "input_tokens_price": "0.5",
-        "output_tokens_price": "1.5",
+        "input_tokens_price": 0.5,
+        "output_tokens_price": 1.5,
         "context": "32K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -335,8 +335,8 @@
     {
         "model": "gemini-1.5-pro",
         "provider": "Google",
-        "input_tokens_price": "3.5",
-        "output_tokens_price": "10.5",
+        "input_tokens_price": 3.5,
+        "output_tokens_price": 10.5,
         "context": "128K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-04-04"
@@ -344,8 +344,8 @@
     {
         "model": "gemini-1.5-flash",
         "provider": "Google",
-        "input_tokens_price": "0.08",
-        "output_tokens_price": "0.3",
+        "input_tokens_price": 0.08,
+        "output_tokens_price": 0.3,
         "context": "128K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-08-11"
@@ -353,8 +353,8 @@
     {
         "model": "palm-2-for-chat",
         "provider": "Google",
-        "input_tokens_price": "0.25",
-        "output_tokens_price": "0.5",
+        "input_tokens_price": 0.25,
+        "output_tokens_price": 0.5,
         "context": "8K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -362,8 +362,8 @@
     {
         "model": "palm-2-for-chat-32k",
         "provider": "Google",
-        "input_tokens_price": "0.25",
-        "output_tokens_price": "0.5",
+        "input_tokens_price": 0.25,
+        "output_tokens_price": 0.5,
         "context": "32K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -371,8 +371,8 @@
     {
         "model": "palm-2-for-text",
         "provider": "Google",
-        "input_tokens_price": "2.5",
-        "output_tokens_price": "7.5",
+        "input_tokens_price": 2.5,
+        "output_tokens_price": 7.5,
         "context": "8K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -380,8 +380,8 @@
     {
         "model": "palm-2-for-text-32k",
         "provider": "Google",
-        "input_tokens_price": "2.5",
-        "output_tokens_price": "5",
+        "input_tokens_price": 2.5,
+        "output_tokens_price": 5.0,
         "context": "32K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -389,8 +389,8 @@
     {
         "model": "mistral-large",
         "provider": "Mistral",
-        "input_tokens_price": "8",
-        "output_tokens_price": "24",
+        "input_tokens_price": 8.0,
+        "output_tokens_price": 24.0,
         "context": "32K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -398,8 +398,8 @@
     {
         "model": "mistral-medium",
         "provider": "Mistral",
-        "input_tokens_price": "2.7",
-        "output_tokens_price": "8.1",
+        "input_tokens_price": 2.7,
+        "output_tokens_price": 8.1,
         "context": "32K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -407,8 +407,8 @@
     {
         "model": "mistral-small",
         "provider": "Mistral",
-        "input_tokens_price": "2",
-        "output_tokens_price": "6",
+        "input_tokens_price": 2.0,
+        "output_tokens_price": 6.0,
         "context": "32K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -416,8 +416,8 @@
     {
         "model": "mixtral-8x7b",
         "provider": "Mistral",
-        "input_tokens_price": "0.7",
-        "output_tokens_price": "0.7",
+        "input_tokens_price": 0.7,
+        "output_tokens_price": 0.7,
         "context": "32K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -425,8 +425,8 @@
     {
         "model": "mixtral-8x22b",
         "provider": "Mistral",
-        "input_tokens_price": "2",
-        "output_tokens_price": "6",
+        "input_tokens_price": 2.0,
+        "output_tokens_price": 6.0,
         "context": "64K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-04-19"
@@ -434,8 +434,8 @@
     {
         "model": "command-r-plus",
         "provider": "Cohere",
-        "input_tokens_price": "3",
-        "output_tokens_price": "15",
+        "input_tokens_price": 3.0,
+        "output_tokens_price": 15.0,
         "context": "128K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-04-09"
@@ -443,8 +443,8 @@
     {
         "model": "command-r",
         "provider": "Cohere",
-        "input_tokens_price": "0.5",
-        "output_tokens_price": "1.5",
+        "input_tokens_price": 0.5,
+        "output_tokens_price": 1.5,
         "context": "4K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -452,8 +452,8 @@
     {
         "model": "command-light-fine-tuned",
         "provider": "Cohere",
-        "input_tokens_price": "0.3",
-        "output_tokens_price": "0.6",
+        "input_tokens_price": 0.3,
+        "output_tokens_price": 0.6,
         "context": "4K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -461,8 +461,8 @@
     {
         "model": "llama-2-70b",
         "provider": "Groq",
-        "input_tokens_price": "0.7",
-        "output_tokens_price": "0.8",
+        "input_tokens_price": 0.7,
+        "output_tokens_price": 0.8,
         "context": "4K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -470,8 +470,8 @@
     {
         "model": "llama-2-7b",
         "provider": "Groq",
-        "input_tokens_price": "0.1",
-        "output_tokens_price": "0.1",
+        "input_tokens_price": 0.1,
+        "output_tokens_price": 0.1,
         "context": "2K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -479,8 +479,8 @@
     {
         "model": "gemma-7b",
         "provider": "Groq",
-        "input_tokens_price": "0.1",
-        "output_tokens_price": "0.1",
+        "input_tokens_price": 0.1,
+        "output_tokens_price": 0.1,
         "context": "8K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-03-16"
@@ -488,8 +488,8 @@
     {
         "model": "DBRX",
         "provider": "Databricks",
-        "input_tokens_price": "2.25",
-        "output_tokens_price": "6.75",
+        "input_tokens_price": 2.25,
+        "output_tokens_price": 6.75,
         "context": "32K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-04-01"
@@ -497,8 +497,8 @@
     {
         "model": "mpt-30b",
         "provider": "Databricks",
-        "input_tokens_price": "1",
-        "output_tokens_price": "1",
+        "input_tokens_price": 1.0,
+        "output_tokens_price": 1.0,
         "context": "32K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-04-01"
@@ -506,8 +506,8 @@
     {
         "model": "llama-2-13b",
         "provider": "Databricks",
-        "input_tokens_price": "0.95",
-        "output_tokens_price": "0.95",
+        "input_tokens_price": 0.95,
+        "output_tokens_price": 0.95,
         "context": "4K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-04-01"
@@ -515,8 +515,8 @@
     {
         "model": "mpt-7b",
         "provider": "Databricks",
-        "input_tokens_price": "0.5",
-        "output_tokens_price": "0.5",
+        "input_tokens_price": 0.5,
+        "output_tokens_price": 0.5,
         "context": "8K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-04-01"
@@ -524,8 +524,8 @@
     {
         "model": "llama-2-7b-chat-fp16",
         "provider": "Cloudflare",
-        "input_tokens_price": "0.56",
-        "output_tokens_price": "6.66",
+        "input_tokens_price": 0.56,
+        "output_tokens_price": 6.66,
         "context": "2K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-04-19"
@@ -533,8 +533,8 @@
     {
         "model": "llama-2-7b-chat-int8",
         "provider": "Cloudflare",
-        "input_tokens_price": "0.16",
-        "output_tokens_price": "0.24",
+        "input_tokens_price": 0.16,
+        "output_tokens_price": 0.24,
         "context": "2K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-04-19"
@@ -542,8 +542,8 @@
     {
         "model": "mistral-7b-instruct",
         "provider": "Cloudflare",
-        "input_tokens_price": "0.11",
-        "output_tokens_price": "0.19",
+        "input_tokens_price": 0.11,
+        "output_tokens_price": 0.19,
         "context": "32K",
         "source": "https://www.botgenuity.com/tools/llm-pricing",
         "updated": "2024-04-19"
@@ -551,8 +551,8 @@
     {
         "model": "gpt-4-turbo-1106-preview",
         "provider": "Azure",
-        "input_tokens_price": 10,
-        "output_tokens_price": 30,
+        "input_tokens_price": 10.0,
+        "output_tokens_price": 30.0,
         "context": "",
         "source": "https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/azure-openai-service-launches-gpt-4-turbo-and-gpt-3-5-turbo-1106/ba-p/3985962",
         "updated": "2024-03-17"
@@ -560,8 +560,8 @@
     {
         "model": "claude-2",
         "provider": "Anthropic",
-        "input_tokens_price": 8,
-        "output_tokens_price": 24,
+        "input_tokens_price": 8.0,
+        "output_tokens_price": 24.0,
         "context": "",
         "source": "https://docs.anthropic.com/claude/docs/models-overview",
         "updated": "2024-10-01"
@@ -569,8 +569,8 @@
     {
         "model": "imagen",
         "provider": "Google",
-        "input_tokens_price": 20,
-        "output_tokens_price": 20,
+        "input_tokens_price": 20.0,
+        "output_tokens_price": 20.0,
         "context": "",
         "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
         "updated": "2024-07-08"
@@ -578,8 +578,8 @@
     {
         "model": "imagen-image-editing",
         "provider": "Google",
-        "input_tokens_price": 20,
-        "output_tokens_price": 20,
+        "input_tokens_price": 20.0,
+        "output_tokens_price": 20.0,
         "context": "",
         "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
         "updated": "2024-07-01"
@@ -587,8 +587,8 @@
     {
         "model": "imagen-image-generation",
         "provider": "Google",
-        "input_tokens_price": 20,
-        "output_tokens_price": 20,
+        "input_tokens_price": 20.0,
+        "output_tokens_price": 20.0,
         "context": "",
         "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
         "updated": "2024-07-01"
@@ -596,8 +596,8 @@
     {
         "model": "claude-3.5-opus",
         "provider": "Anthropic",
-        "input_tokens_price": 3,
-        "output_tokens_price": 15,
+        "input_tokens_price": 3.0,
+        "output_tokens_price": 15.0,
         "context": "",
         "source": "https://docs.anthropic.com/claude/docs/models-overview",
         "updated": "2024-10-01"
@@ -605,8 +605,8 @@
     {
         "model": "claude-3.5-haiku",
         "provider": "Anthropic",
-        "input_tokens_price": 3,
-        "output_tokens_price": 15,
+        "input_tokens_price": 3.0,
+        "output_tokens_price": 15.0,
         "context": "",
         "source": "https://docs.anthropic.com/claude/docs/models-overview",
         "updated": "2024-10-01"
@@ -614,8 +614,8 @@
     {
         "model": "command-r+",
         "provider": "AWS",
-        "input_tokens_price": 3,
-        "output_tokens_price": 15,
+        "input_tokens_price": 3.0,
+        "output_tokens_price": 15.0,
         "context": "",
         "source": "https://aws.amazon.com/bedrock/pricing/",
         "updated": "2024-05-01"
@@ -632,8 +632,8 @@
     {
         "model": "jamba-1.5-large",
         "provider": "AWS",
-        "input_tokens_price": 2,
-        "output_tokens_price": 8,
+        "input_tokens_price": 2.0,
+        "output_tokens_price": 8.0,
         "context": "",
         "source": "https://aws.amazon.com/bedrock/pricing/",
         "updated": "2024-09-29"
@@ -668,8 +668,8 @@
     {
         "model": "command-r-fine-tuned-model",
         "provider": "Cohere",
-        "input_tokens_price": 2,
-        "output_tokens_price": 4,
+        "input_tokens_price": 2.0,
+        "output_tokens_price": 4.0,
         "context": "",
         "source": "https://cohere.com/pricing",
         "updated": "2024-10-01"
@@ -677,8 +677,8 @@
     {
         "model": "fine-tuned-command-r",
         "provider": "Cohere",
-        "input_tokens_price": 2,
-        "output_tokens_price": 4,
+        "input_tokens_price": 2.0,
+        "output_tokens_price": 4.0,
         "context": "",
         "source": "https://cohere.com/pricing",
         "updated": "2024-05-22"
@@ -695,8 +695,8 @@
     {
         "model": "imagen-upscaling",
         "provider": "Google",
-        "input_tokens_price": 3,
-        "output_tokens_price": 3,
+        "input_tokens_price": 3.0,
+        "output_tokens_price": 3.0,
         "context": "",
         "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
         "updated": "2024-07-01"
@@ -704,8 +704,8 @@
     {
         "model": "gpt-4-1106-vision-preview",
         "provider": "OpenAI",
-        "input_tokens_price": 1,
-        "output_tokens_price": 3,
+        "input_tokens_price": 1.0,
+        "output_tokens_price": 3.0,
         "context": "",
         "source": "https://openai.com/pricing",
         "updated": "2024-03-22"
@@ -777,7 +777,7 @@
         "model": "llama-2-chat-13b",
         "provider": "AWS",
         "input_tokens_price": 0.75,
-        "output_tokens_price": 1,
+        "output_tokens_price": 1.0,
         "context": "",
         "source": "https://aws.amazon.com/bedrock/pricing/?nc1=h_ls",
         "updated": "2024-05-01"

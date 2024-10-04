@@ -30,8 +30,8 @@ class HuhuhangScraper:
                 pricing_data = LLMModelPricing(
                     model=model_name,
                     provider=provider,
-                    input_tokens_price=input_tokens_price,
-                    output_tokens_price=output_tokens_price,
+                    input_tokens_price=float(input_tokens_price) if input_tokens_price else 0.0,
+                    output_tokens_price=float(output_tokens_price) if output_tokens_price else 0.0,
                     context="",
                     source=source_url,
                     updated=updated_date
