@@ -1,8 +1,8 @@
-from llm_pricing_sdk.enums import DataSources
-from llm_pricing_sdk.scrapers.botgenuity import BotgenuityScraper
-from llm_pricing_sdk.scrapers.docsbot import DocsBotScraper
-from llm_pricing_sdk.scrapers.huggingface import HuggingfaceScraper
-from llm_pricing_sdk.scrapers.huhuhang import HuhuhangScraper
+from llm_price_scraper.enums import DataSources
+from llm_price_scraper.scrapers.botgenuity import BotgenuityScraper
+from llm_price_scraper.scrapers.docsbot import DocsBotScraper
+from llm_price_scraper.scrapers.huggingface import HuggingfaceScraper
+from llm_price_scraper.scrapers.huhuhang import HuhuhangScraper
 
 class LlmPricingScraper:
     @staticmethod

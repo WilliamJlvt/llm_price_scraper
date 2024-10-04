@@ -1,6 +1,6 @@
 import unittest
 import requests_mock
-from llm_pricing_sdk.scrapers import LlmPricingScraper, DataSources
+from llm_price_scraper.scrapers import LlmPricingScraper, DataSources
 
 
 class TestLlmPricingScraper(unittest.TestCase):

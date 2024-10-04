@@ -1,7 +1,5 @@
-from llm_pricing_sdk.enums import DataSources
-
-# LLM Pricing SDK
-LLM Pricing SDK is a Python package designed to scrape and organize pricing information for large language models (LLMs)
+# LLM Price Scraper
+LLM Price Scraper is a Python package designed to scrape and organize pricing information for large language models (LLMs)
 from the following sources:
 - https://docsbot.ai/tools/gpt-openai-api-pricing-calculator (best source for now)
 - https://huggingface.co/spaces/philschmid/llm-pricing
@@ -11,20 +9,20 @@ from the following sources:
 ## Installation
 ~~You can install the package using pip:~~ (not yet available)
 
-~~pip install llm_pricing_sdk~~
+~~pip install llm_price_scraper~~
 
 To install the package, you can clone the repository and install it using the following commands:
 ```bash
-git clone git@github.com:WilliamJlvt/llm_pricing_sdk.git
-cd llm_pricing_sdk
+git clone git@github.com:WilliamJlvt/llm_price_scraper.git
+cd llm_price_scraper
 pip install .
 ```
 
 
 ## Usage
-Once you have installed the SDK, you can use it to quickly retrieve the current pricing information from the website.
+Once you have installed the scrapper, you can use it to quickly retrieve the current pricing information from the website.
 ```python
-from llm_pricing_sdk.scrapers import LlmPricingScraper
+from llm_price_scraper.scrapers import LlmPricingScraper
 
 # Get the pricing information
 pricing_data = LlmPricingScraper.scrape()
@@ -55,7 +53,7 @@ for entry in gpt_4o_models:
 ```
 You can also chose the source of the data you want to scrape by passing the source as an argument to the `scrape` method. The available sources are defined in the `DataSources` enum.
 ```python
-from llm_pricing_sdk.scrapers import LlmPricingScraper, DataSources
+from llm_price_scraper.scrapers import LlmPricingScraper, DataSources
 
 pricing_data = LlmPricingScraper.scrape(DataSources.HUGGINGFACE)
 ```

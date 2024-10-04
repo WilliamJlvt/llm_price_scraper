@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
 
-from llm_pricing_sdk.models import LLMModelPricing
+from llm_price_scraper.models import LLMModelPricing
 
 
 class BotgenuityScraper:

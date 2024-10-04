@@ -1,8 +1,8 @@
 import re
 from datetime import datetime
 
-from llm_pricing_sdk.utils import fetch_ts_file
-from llm_pricing_sdk.models import LLMModelPricing
+from llm_price_scraper.utils import fetch_ts_file
+from llm_price_scraper.models import LLMModelPricing
 
 
 class HuggingfaceScraper:

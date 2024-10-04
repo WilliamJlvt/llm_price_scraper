@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, request
-from llm_pricing_sdk.enums import DataSources
-from llm_pricing_sdk.scrapers import LlmPricingScraper
+from llm_price_scraper.enums import DataSources
+from llm_price_scraper.scrapers import LlmPricingScraper
 
 app = Flask(__name__)
 
