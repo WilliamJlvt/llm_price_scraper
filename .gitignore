@@ -7,3 +7,7 @@ __pycache__
 *.pyo
 *.pyd
 .temp
+*.secret
+*.log
+*.egg-info
+*.egg

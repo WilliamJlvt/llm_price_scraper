@@ -7,17 +7,10 @@ from the following sources:
 - https://llm-price.com
 
 ## Installation
-~~You can install the package using pip:~~ (not yet available)
-
-~~pip install llm_price_scraper~~
-
-To install the package, you can clone the repository and install it using the following commands:
+You can install the package using pip:
 ```bash
-git clone git@github.com:WilliamJlvt/llm_price_scraper.git
-cd llm_price_scraper
-pip install .
+pip install llm-price-scraper==1.0.0
 ```
-
 
 ## Usage
 Once you have installed the scrapper, you can use it to quickly retrieve the current pricing information from the website.
