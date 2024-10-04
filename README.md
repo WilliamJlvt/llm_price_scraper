@@ -9,7 +9,7 @@ from the following sources:
 ## Installation
 You can install the package using pip:
 ```bash
-pip install llm-price-scraper==1.0.0
+pip install llm-price-scraper==1.0.2
 ```
 
 ## Usage

@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="llm_price_scraper",
-    version="1.0.0",
+    version="1.0.2",
     packages=find_packages(),
     install_requires=[
         "requests==2.32.3",
