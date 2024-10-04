@@ -10,7 +10,9 @@ def get_pricing():
     source = request.args.get('source', default='huggingface', type=str)
 
     try:
-        if source.lower() == DataSources.BOTGENUITY.value:
+        if source.lower() == DataSources.DOCSBOT.value:
+            results = LlmPricingScraper.scrape(DataSources.DOCSBOT)
+        elif source.lower() == DataSources.BOTGENUITY.value:
             results = LlmPricingScraper.scrape(DataSources.BOTGENUITY)
         elif source.lower() == DataSources.HUGGINGFACE.value:
             results = LlmPricingScraper.scrape(DataSources.HUGGINGFACE)

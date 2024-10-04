@@ -6,7 +6,11 @@ from llm_pricing_sdk.scrapers import LlmPricingScraper, DataSources
 class TestLlmPricingScraper(unittest.TestCase):
 
     def test_scrape_returns_at_least_one_result(self):
-        pricing_data = LlmPricingScraper.scrape()
+        pricing_data = LlmPricingScraper.scrape(DataSources.HUGGINGFACE)
+        self.assertTrue(len(pricing_data) > 0)
+        pricing_data = LlmPricingScraper.scrape(DataSources.DOCSBOT)
+        self.assertTrue(len(pricing_data) > 0)
+        pricing_data = LlmPricingScraper.scrape(DataSources.HUHUHANG)
         self.assertTrue(len(pricing_data) > 0)
         pricing_data = LlmPricingScraper.scrape(DataSources.BOTGENUITY)
         self.assertTrue(len(pricing_data) > 0)
@@ -18,8 +22,8 @@ class TestLlmPricingScraper(unittest.TestCase):
         <html><body><table></table></body></html>
         """)
         results = LlmPricingScraper.scrape(DataSources.BOTGENUITY)
-        self.assertEqual(len(results),
-                         0)  # No data in table, expect empty list
+        # No data in table, expect empty list
+        self.assertEqual(len(results),0)
 
     @requests_mock.Mocker()
     def test_scrape_raises_error_on_failure(self, mock_request):

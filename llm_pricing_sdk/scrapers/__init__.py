@@ -1,5 +1,6 @@
 from llm_pricing_sdk.enums import DataSources
 from llm_pricing_sdk.scrapers.botgenuity import BotgenuityScraper
+from llm_pricing_sdk.scrapers.docsbot import DocsBotScraper
 from llm_pricing_sdk.scrapers.huggingface import HuggingfaceScraper
 from llm_pricing_sdk.scrapers.huhuhang import HuhuhangScraper
 
@@ -11,7 +12,9 @@ class LlmPricingScraper:
 
         :returns: A list of LLMModelPricing objects.
         """
-        if source == DataSources.BOTGENUITY:
+        if source == DataSources.DOCSBOT:
+            return DocsBotScraper.scrape()
+        elif source == DataSources.BOTGENUITY:
             return BotgenuityScraper.scrape()
         elif source == DataSources.HUGGINGFACE:
             return HuggingfaceScraper.scrape()

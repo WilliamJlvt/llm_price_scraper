@@ -2,7 +2,8 @@ from llm_pricing_sdk.enums import DataSources
 
 # LLM Pricing SDK
 LLM Pricing SDK is a Python package designed to scrape and organize pricing information for large language models (LLMs)
-from the following sources: 
+from the following sources:
+- https://docsbot.ai/tools/gpt-openai-api-pricing-calculator (best source for now)
 - https://huggingface.co/spaces/philschmid/llm-pricing
 - https://www.botgenuity.com/tools/llm-pricing
 - https://llm-price.com
@@ -56,7 +57,7 @@ You can also chose the source of the data you want to scrape by passing the sour
 ```python
 from llm_pricing_sdk.scrapers import LlmPricingScraper, DataSources
 
-pricing_data = LlmPricingScraper.scrape(DataSources.BOTGENUITY)
+pricing_data = LlmPricingScraper.scrape(DataSources.HUGGINGFACE)
 ```
 
 ### Example Output
