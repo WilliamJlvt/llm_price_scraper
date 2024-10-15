@@ -5,3 +5,4 @@ class DataSources(Enum):
     BOTGENUITY = "botgenuity"
     HUGGINGFACE = "huggingface"
     HUHUHANG = "huhuhang"
+    OPENAI = "openai"

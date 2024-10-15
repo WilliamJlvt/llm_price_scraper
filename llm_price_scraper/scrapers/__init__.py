@@ -3,6 +3,7 @@ from llm_price_scraper.scrapers.botgenuity import BotgenuityScraper
 from llm_price_scraper.scrapers.docsbot import DocsBotScraper
 from llm_price_scraper.scrapers.huggingface import HuggingfaceScraper
 from llm_price_scraper.scrapers.huhuhang import HuhuhangScraper
+from llm_price_scraper.scrapers.openai import OpenaiScraper
 
 class LlmPricingScraper:
     @staticmethod
@@ -20,5 +21,8 @@ class LlmPricingScraper:
             return HuggingfaceScraper.scrape()
         elif source == DataSources.HUHUHANG:
             return HuhuhangScraper.scrape()
+        elif source == DataSources.OPENAI:
+            raise Exception(f"Source '{source}' is not supported.")
+            # return OpenaiScraper.scrape()
         else:
             raise Exception(f"Source '{source}' is not supported.")
